@@ -293,6 +293,7 @@
         </linearGradient>
       </defs>
 
+```
   <path d="M250 50 C250 33 270 25 282 38
            C294 25 314 33 314 50
            C314 78 282 92 282 106
@@ -318,7 +319,7 @@
         fill="#ff7aa2"/>
 </svg>
 
-<h1>Brandon, will you be my Valentine? 💕</h1>
+<h1>Shawni, will you be my Valentine? 💕</h1>
 
 <section class="button-zone" id="zone">
   <button id="yesBtn">Yes</button>
@@ -337,6 +338,7 @@
     alt="Fireworks"
   />
 </section>
+```
 
   </main>
 
@@ -516,8 +518,11 @@
           noBtn.textContent = "Please? 😢";
         } else if (clickAttempts === 5) {
           noBtn.textContent = "Think about it! 🙏";
-        } else if (clickAttempts >= 6) {
+        } else if (clickAttempts === 6) {
           noBtn.textContent = "Just click Yes! 😭";
+        } else if (clickAttempts >= 7) {
+          // After 7 attempts, redirect them
+          window.location.href = "https://tlctugger.com/";
         }
       }
     }
